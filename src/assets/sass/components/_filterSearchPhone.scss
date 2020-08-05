@@ -1,0 +1,81 @@
+.FilterSearchPhone {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-primary-light;
+
+
+    &.container {
+        padding: 2rem 1.5rem ;
+
+    }
+
+    .item {
+        p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            color: $color-white;
+            font-weight: 700;
+            strong {
+                margin-right: 5px;
+                color: $color-white;
+                font-weight: 700;
+            }
+
+            svg {
+                margin-right: 10px;
+
+            }
+        }
+    }
+
+    .button {
+        font-size: 1.2rem;
+        background-color: $color-primary-dark;
+        color: $color-white;
+        font-weight: 600;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-color: $color-primary-dark;
+
+    }
+
+
+
+}
+
+
+
+.FilterSearchPhonemodel {
+    .modal-background {
+        background-color: $color-primary-light;
+    
+    }
+
+
+
+
+    &__form {
+        padding: 0 3rem 2rem;
+
+        .label {
+            color: $color-white;
+            font-weight: 800;
+        }
+
+        .select {
+            display: grid;
+
+        }
+
+        .button {
+            font-size: 1.2rem;
+            background-color: $color-primary-dark;
+            color: $color-white;
+            font-weight: 600;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            border-color: $color-primary-dark;
+            width: 100%;
+        }
+    }
+}

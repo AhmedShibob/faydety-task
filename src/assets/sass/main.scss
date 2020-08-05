@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+@import '~bulma/bulma';
+
+
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+
+@import './layouts/nav';
+@import './layouts/footer';
+
+
+@import './components/hero';
+@import './components/filterSearch';
+@import './components/filterSearchPhone';
+@import './components/loans';
+
+

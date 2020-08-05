@@ -1,0 +1,295 @@
+.loans {
+    margin: 4rem 0;
+
+
+    @include respond(big-phone) {
+        margin: 1rem 0;
+        top: -4rem;
+        position: relative;
+    }
+
+    .loan__avter-big {
+        @include respond(big-phone) {
+            display: none;
+        }
+    }
+
+    .loan__avter-s {
+        display: none;
+
+        @include respond(big-phone) {
+            display: block;
+
+
+            margin-left: 0em;
+            margin-right: 1em;
+
+        }
+    }
+
+    .loan-mob-header {
+        display: flex
+    }
+
+    .container {
+        padding: 0 1.5rem;
+
+    }
+
+    .media-content {
+        overflow-x: unset;
+    }
+
+    .loan__title {}
+
+
+
+    .loan {
+        margin-top: 1.875rem;
+        background-color: #f3f7f8;
+        border-radius: 10px;
+        padding: 0.9375rem;
+        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .2);
+
+
+        &__table {
+
+            @include respond(big-phone) {
+                padding: inherit;
+            }
+
+            @include respond(tab-port) {
+                padding: inherit;
+            }
+        }
+
+        &__title {
+
+
+            @include respond(big-phone) {
+                width: 65%;
+                word-break: break-word;
+
+            }
+
+            @include respond(tab-port) {
+                margin-bottom: 1.5rem;
+            }
+
+
+
+            * {
+                color: $color-primary-dark;
+            }
+
+
+        }
+
+
+
+        table {
+            tbody {
+                tr {
+
+
+                    @include respond(tab-port) {
+
+
+
+                        td:not(:last-child) {
+                            border-right: 1px solid #d4d9df;
+                        }
+
+                    }
+
+                    td {
+                        border: 1px solid #d4d9df;
+                        background-color: #f3f7f8;
+                        padding: 1.25rem;
+                        width: 33.333333%;
+
+
+                        @include respond(tab-port) {
+                            border: 1px solid #f3f7f8;
+                            padding: 0 0.8rem;
+
+
+                        }
+
+                        &.firt-cell {
+                            background-color: $color-white;
+
+                            @include respond(tab-port) {
+                                background-color: #f3f7f8;
+                            }
+
+                            p {
+                                color: $color-gray-dark-3;
+
+                                span {
+                                    font-size: 0.875rem;
+                                    margin-left: .15rem;
+
+
+                                    @include respond(tab-port) {
+                                        font-size: 0.7rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        h1 {
+                            font-size: 0.875rem;
+                            color: $color-gray-dark;
+                            font-weight: 400;
+
+
+                            @include respond(big-phone) {
+                                font-size: 0.7rem;
+
+                            }
+
+
+                        }
+
+                        p {
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                            color: $color-gray-dark;
+
+
+                            @include respond(big-phone) {
+                                font-size: 0.8rem;
+
+                            }
+
+                        }
+
+
+                        ul {
+                            li {
+                                font-size: 0.875rem !important;
+                                color: #4e5459;
+                                font-weight: 400;
+                                font-family: sans-serif;
+
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        &__title-list {
+            font-size: 0.875rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 1rem;
+            color: $color-gray-dark !important;
+
+            @include respond(tab-port) {
+                margin-top: 0.8rem;
+            }
+
+
+        }
+
+        &__action {
+
+
+            @include respond(tab-port) {
+                display: inline-block;
+                float: right;
+                margin-right: 1rem;
+
+            }
+
+            @include respond(big-phone) {
+                display: flex;
+                float: unset;
+            }
+
+
+            a {
+                color: $color-primary-light;
+                text-decoration: underline;
+                font-size: .8rem;
+                text-align: center;
+                display: block;
+                margin: auto;
+
+
+                @include respond(big-phone) {
+                    margin-left: 1rem;
+
+                }
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                color: $color-gray-dark !important;
+                font-size: 1rem;
+
+
+
+                @include respond(big-phone) {
+                    display: none;
+
+                }
+            }
+
+            .button {
+                background-color: $color-primary-light;
+                color: $color-white;
+                width: 100%;
+                font-weight: 600;
+                border-radius: 15px !important;
+
+                @include respond(big-phone) {
+                    width: 40%;
+                    margin-left: auto;
+                }
+            }
+        }
+
+
+        &__togge-detils {
+
+            @include respond(tab-port) {
+                position: relative;
+            }
+
+
+            .button {
+                text-align: center;
+                margin: auto;
+                display: block;
+                border-color: #f3f7f8;
+                background-color: #f3f7f8;
+                color: $color-primary-light;
+
+
+                @include respond(tab-port) {
+                    position: absolute;
+                    left: 45%;
+                    top: 100%;
+                    transform: translate(-85%, 160%);
+
+                }
+
+
+
+                @include respond(big-phone) {
+                    position: relative;
+                    left: 0%;
+                    top: 0%;
+                    transform: translate(0%, 0%);
+                }
+
+            }
+        }
+    }
+}

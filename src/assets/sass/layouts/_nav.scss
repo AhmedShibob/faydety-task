@@ -1,0 +1,205 @@
+.navbar {
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid $color-border;
+
+
+    &-mob {
+        position: absolute;
+        top: 80px;
+        width: 0%;
+        height: 100%;
+        left: 0%;
+        z-index: 3000;
+        background: #fff;
+        transition: 1s all cubic-bezier(0, .12, .14, 1);
+        overflow: hidden;
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+
+       &__content{
+        padding: 2rem;
+       }
+
+        &__list-top {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+            li {
+
+                &:not(:last-child){
+                    margin-bottom: 0.5rem;
+                }
+
+                a {
+                    color: $color-primary-dark;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                   
+                }
+            }
+        }
+
+        &__list-bottom {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ddd;
+            li {
+                .navbar-item {
+                    color: #4a4a4a;
+                   
+                    padding: .5rem 0;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    &-mob--show {
+        width: 70%;
+    }
+
+
+
+
+    .navbar-item:hover {
+        background-color: $color-white;
+    }
+
+
+    &-brand {
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+
+        img {
+            height: 65px;
+            max-height: unset;
+
+            @include respond(tab-port) {
+                height: 35px;
+            }
+        }
+    }
+
+    &__lists {
+        width: 100%;
+
+    }
+
+    .navber__top-list {
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            li {
+
+                a {
+                    color: $color-primary-dark;
+                    font-size: .875rem;
+                    padding: .5rem;
+
+                }
+
+                &:not(:last-child) {
+                    margin-right: .5rem;
+                }
+
+
+            }
+        }
+    }
+
+    .navber__divider {
+        position: relative;
+
+        div {
+            width: .7px;
+            height: 70%;
+            background-color: rgba($color-primary-dark, 0.7);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .navber-lang--active {
+        font-weight: 800;
+    }
+
+    .navber__bottom-list {
+        margin-top: 20px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+
+                a {
+                    color: $color-primary-dark;
+                    font-weight: 900;
+
+                }
+
+
+            }
+        }
+    }
+}
+
+
+.header-dropdown {
+    width: 100%;
+    background-color: $color-primary-light;
+    color: $color-white;
+    position: relative;
+    z-index: 999;
+    box-shadow: 0px 2px 3px 0px rgba($color-black-1, .4);
+
+    .navber__divider {
+        position: relative;
+
+        div {
+            width: .7px;
+            height: 70%;
+            background-color: rgba($color-white, 0.7);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            a {
+                color: $color-white;
+                font-weight: 900;
+
+                &:hover {
+                    background-color: $color-primary-light;
+                    color: $color-white;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+        }
+
+    }
+
+
+
+}
